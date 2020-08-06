@@ -1,0 +1,21 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <title>Sobre - Jefferson Rodrigues</title>    
+{% endblock %}
+
+{% block content %}
+
+<div id="wrapper">
+    <img src="{{ data.avatar_url }}" alt="Jefferson Rodrigues">
+    <h1>{{ data.name }}</h1>
+    <h2>{{ data.role }}</h2>
+    <p>{{ data.description }}</p>
+</div>
+<div id="links-footer" class="links">
+    {% for link in data.links %}
+        <a href="{{ link.url }}" target="_blank">{{ link.name }}</a>
+    {% endfor %}
+</div>
+
+{% endblock %}
