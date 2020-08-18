@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+:root {
+    --primary-color: #7159c1
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +13,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 800;
-    background-color: #7159c1;
+    background-color: var(--primary-color);
 }
 
 header {
@@ -30,4 +34,10 @@ header {
 
 .links a {
     text-decoration: none;
+    color: #777;
+}
+
+.links a.active {
+    font-weight: 800;
+    color: var(--primary-color);
 }
