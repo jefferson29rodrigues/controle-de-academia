@@ -68,8 +68,35 @@ header {
     background-color: #fff;
     width: 800px;
     height: 400px;
+    
+    /* espaçamento ao centro */
     margin: 25px auto;
 
+    /* grid dividido ao meio */
     display: grid;
     grid-template-columns: 1fr 1fr;
+
+    /* sombra */
+    box-shadow: 0px 2px 6px -2px rgba(0, 0, 0, 0.4);
+
+    /* animation */
+    opacity: 0;
+
+    animation-name: up;
+    animation-duration: 800ms;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    animation-play-state: running;
+    animation-direction: alternate;
+    animation-iteration-count: 3;
+}
+
+@keyframes up {
+    from {
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+    }
 }
