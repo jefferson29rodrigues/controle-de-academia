@@ -67,7 +67,7 @@ header {
 .card {
     background-color: #fff;
     width: 800px;
-    height: 400px;
+    min-height: 400px;
     
     /* espaçamento ao centro */
     margin: 25px auto;
@@ -99,4 +99,40 @@ header {
     to {
         opacity: 1;
     }
+}
+
+/* details */
+
+.details {
+    padding: 30px;
+}
+
+.details .item {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 16px 0;
+}
+
+.details .item:last-child {
+    border: none;
+}
+
+.details h3,
+.details .item div:nth-child(1) {
+    font-size: 14px;
+    line-height: 24px;
+    color: #aaa;
+    letter-spacing: 0.7;
+    font-weight: normal;
+}
+
+.details .item:nth-child(2) {
+    color: #555;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.details h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--primary-color);
 }
