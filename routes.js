@@ -14,6 +14,11 @@ routes.get('/instructors/create', function(req, res) {
 });
 
 routes.post('/instructors', function(req, res) {
+
+    if (req.body.name != "") {
+        return res.send(req.body.name)
+    }
+
     return res.send(req.body)
 });
 
