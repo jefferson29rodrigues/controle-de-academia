@@ -13,6 +13,9 @@ exports.post = function(req, res) {
        }
    }
 
+   req.body.birth = Date.parse(req.body.birth)
+   req.body.created_at = Date.now()
+
    // na 1° [] -> [{...}] na 2° [{...}] -> [{...}, {...}] 
    data.instructors.push(req.body) //  na 3° [{...}, {...}] -> [{...}, {...}, {...}]
 
