@@ -13,12 +13,24 @@ exports.post = function(req, res) {
        }
    }
 
-   req.body.birth = Date.parse(req.body.birth)
-   req.body.created_at = Date.now()
-   req.body.id = Number(data.instructors.length + 1)
+   let {avatar_url, birth, name, gender, services} = req.body
+
+   birth = Date.parse(birth)
+   const created_at = Date.now()
+   const id = Number(data.instructors.length + 1)
+
+   
 
    // na 1° [] -> [{...}] na 2° [{...}] -> [{...}, {...}] 
-   data.instructors.push(req.body) //  na 3° [{...}, {...}] -> [{...}, {...}, {...}]
+   data.instructors.push({
+       id,
+       avatar_url,
+       name,
+       birth,
+       gender,
+       services,
+       created_at
+   }) //  na 3° [{...}, {...}] -> [{...}, {...}, {...}]
 
    fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err) {
        if (err) return res.send("write file error!")
