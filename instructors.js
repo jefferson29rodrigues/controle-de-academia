@@ -11,7 +11,7 @@ exports.show = function(req, res) {
     const { id } = req.params
 
     const foundInstructor = data.instructors.find(function(instructor) {
-        return instructor.id == id
+        return id == instructor.id
     })
 
     if (!foundInstructor) return res.send("Instructor not found!")
@@ -67,6 +67,19 @@ exports.post = function(req, res) {
    });
 
     //return res.send(req.body)
+}
+
+// edit
+exports.edit = function(req, res) {
+    const { id } = req.params
+
+    const foundInstructor = data.instructors.find(function(instructor) {
+        return id == instructor.id
+    })
+
+    if (!foundInstructor) return res.send("Instructor not found!")
+
+    return res.render('instructors/edit', { instructor: foundInstructor })
 }
 
 // update
