@@ -22,7 +22,7 @@ exports.show = function(req, res) {
       ...foundInstructor,
       age: age(foundInstructor.birth),
       services: foundInstructor.services.split(","),
-      created_at: new Intl.DateTimeFormat("en-GB").format(foundInstructor.created_at),
+      created_at: new Intl.DateTimeFormat("pt-BR").format(foundInstructor.created_at),
     }
 
     return res.render("instructors/show", { instructor })
@@ -81,7 +81,7 @@ exports.edit = function(req, res) {
 
     const instructor = {
         ...foundInstructor,
-        birth: date(foundInstructor.birth)
+        birth: date(foundInstructor.birth) // 2000-2-1
     }
 
     return res.render('instructors/edit', { instructor })
