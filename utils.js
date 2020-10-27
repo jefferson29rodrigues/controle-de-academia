@@ -23,5 +23,15 @@ module.exports = {
         const day = `0${date.getUTCDate()}`.slice(-2)
 
         return `${year}-${month}-${day}`
-    } 
+    },
+
+    desde: function(timestamp) {
+        const desde = new Date(timestamp)
+
+        const year = desde.getUTCFullYear()
+        const month = `0${desde.getUTCMonth() + 1}`.slice(-2)
+        const day = `0${desde.getUTCDate()}`.slice(-2)
+
+        return `${day}/${month}/${year}`
+    }
 }
