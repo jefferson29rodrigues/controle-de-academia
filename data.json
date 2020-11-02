@@ -1,15 +1,6 @@
 {
   "instructors": [
     {
-      "id": 1,
-      "avatar_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQYiQKHU1vKsxPuYQRnWXkUS6xZtfn4vSzvcg&usqp=CAU",
-      "name": "Jefferson Rodrigues do Nascimento",
-      "birth": 623898000000,
-      "gender": "M",
-      "services": "Programador, Professor, Estudante",
-      "created_at": 1598992577654
-    },
-    {
       "id": 2,
       "avatar_url": "https://www.tudodesenhos.com/uploads/images/2390/barbie-vaidosa.jpeg",
       "name": "juliana dos santos silva rodrigues",
