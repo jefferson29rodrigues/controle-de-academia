@@ -109,15 +109,6 @@
       "created_at": 1599771989588
     },
     {
-      "id": 15,
-      "avatar_url": "http://dataNumerica.com.br",
-      "name": "dataNumerica2",
-      "birth": 949363200000,
-      "gender": "F",
-      "services": "Atleta",
-      "created_at": 1600109116005
-    },
-    {
       "id": 16,
       "avatar_url": "http://jeff.com.br",
       "name": "jefferson",
@@ -128,7 +119,7 @@
     },
     {
       "id": 17,
-      "avatar_url": "http://jeff.com.br",
+      "avatar_url": "https://lh3.googleusercontent.com/ogw/ADGmqu8-LriL3TTTQAh0bgd0KMLlzdw2Ki3lfAGJxGXo=s83-c-mo",
       "name": "jefferson",
       "birth": 951868800000,
       "gender": "on",
@@ -137,11 +128,11 @@
     },
     {
       "id": 18,
-      "avatar_url": "http://jeff.com.br",
+      "avatar_url": "https://lh3.googleusercontent.com/ogw/ADGmqu8-LriL3TTTQAh0bgd0KMLlzdw2Ki3lfAGJxGXo=s83-c-mo",
       "name": "Jefferson Rodrigues do Nascimento",
       "birth": 951868800000,
       "gender": "M",
-      "services": "Gamer, Estudante",
+      "services": "Gamer, Estudante, Programador",
       "created_at": 1603812907089
     }
   ]
