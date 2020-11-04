@@ -26,11 +26,11 @@
       "id": 3,
       "avatar_url": "https://vs.media/resize?compression=8&quality=65&url=http%3A%2F%2Fimg.vs.media%2F1554726933755-52810539_2169466816425041_4414742899484753889_n.jpg&width=320",
       "name": "Wilson",
-      "email": "julianasantospqd@gmail.com",
+      "email": "jose@gmail.com",
       "birth": 1605398400000,
       "gender": "M",
-      "blood": "O-",
-      "weight": "87",
+      "blood": "O+",
+      "weight": "78",
       "height": "170"
     },
     {
@@ -54,6 +54,17 @@
       "blood": "O+",
       "weight": "53",
       "height": "174"
+    },
+    {
+      "id": 6,
+      "avatar_url": "https://img.olx.com.br/images/85/858003001205778.jpg",
+      "name": "Jose",
+      "email": "josepqd@gmail.com",
+      "birth": 1162598400000,
+      "gender": "M",
+      "blood": "O-",
+      "weight": "77",
+      "height": "168"
     }
   ],
   "instructors": [
