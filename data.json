@@ -6,7 +6,7 @@
       "email": "julianasantospqd@gmail.com",
       "birth": 1392249600000,
       "gender": "M",
-      "blood": "A1",
+      "blood": "A+",
       "weight": "80",
       "height": "169",
       "id": 1
@@ -17,7 +17,7 @@
       "email": "julianasantospqd@gmail.com",
       "birth": 1606780800000,
       "gender": "F",
-      "blood": "O1",
+      "blood": "O+",
       "weight": "76",
       "height": "165",
       "id": 2
@@ -29,7 +29,7 @@
       "email": "julianasantospqd@gmail.com",
       "birth": 1605398400000,
       "gender": "M",
-      "blood": "O0",
+      "blood": "O-",
       "weight": "87",
       "height": "170"
     },
@@ -40,7 +40,7 @@
       "email": "julianasantospqd@gmail.com",
       "birth": 993168000000,
       "gender": "F",
-      "blood": "B1",
+      "blood": "B+",
       "weight": "80",
       "height": "150"
     },
@@ -51,7 +51,7 @@
       "email": "julianasantospqd@gmail.com",
       "birth": 1562371200000,
       "gender": "M",
-      "blood": "O1",
+      "blood": "O+",
       "weight": "53",
       "height": "174"
     }

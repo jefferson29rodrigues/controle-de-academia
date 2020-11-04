@@ -1,6 +1,6 @@
 const fs = require('fs');
 const data = require("../data.json")
-const { age, date, desde } = require('../utils')
+const { age, desde, birthday } = require('../utils')
 
 
 exports.index = function(req, res) {
@@ -28,9 +28,7 @@ exports.show = function(req, res) {
     const member = {
       ...foundMember,
       age: age(foundMember.birth),
-//      services: foundMember.services.split(","),
-      created_at: desde(foundMember.created_at),
-      //created_at: new Intl.DateTimeFormat("pt-BR").format(foundMember.created_at),
+      birth: birthday(foundMember.birth),
     }
 
     return res.render("members/show", { member })
