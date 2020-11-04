@@ -1,5 +1,61 @@
 {
-  "members": [],
+  "members": [
+    {
+      "avatar_url": "http://jeff.com.br",
+      "name": "José Wilson do Nascimento do Joana Darc Rodrigues da SiIva",
+      "email": "julianasantospqd@gmail.com",
+      "birth": 1392249600000,
+      "gender": "M",
+      "blood": "A1",
+      "weight": "80",
+      "height": "169",
+      "id": 1
+    },
+    {
+      "avatar_url": "https://img.olx.com.br/images/85/858003001205778.jpg",
+      "name": "Joana Darc Rodrigues da Silva",
+      "email": "julianasantospqd@gmail.com",
+      "birth": 1606780800000,
+      "gender": "F",
+      "blood": "O1",
+      "weight": "76",
+      "height": "165",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "avatar_url": "https://vs.media/resize?compression=8&quality=65&url=http%3A%2F%2Fimg.vs.media%2F1554726933755-52810539_2169466816425041_4414742899484753889_n.jpg&width=320",
+      "name": "Wilson",
+      "email": "julianasantospqd@gmail.com",
+      "birth": 1605398400000,
+      "gender": "M",
+      "blood": "O0",
+      "weight": "87",
+      "height": "170"
+    },
+    {
+      "id": 4,
+      "avatar_url": "https://vs.media/resize?compression=8&quality=65&url=http%3A%2F%2Fimg.vs.media%2F1554726933755-52810539_2169466816425041_4414742899484753889_n.jpg&width=320",
+      "name": "joana Darc",
+      "email": "julianasantospqd@gmail.com",
+      "birth": 993168000000,
+      "gender": "F",
+      "blood": "B1",
+      "weight": "80",
+      "height": "150"
+    },
+    {
+      "id": 5,
+      "avatar_url": "https://img.olx.com.br/images/85/858003001205778.jpg",
+      "name": "Nascimento",
+      "email": "julianasantospqd@gmail.com",
+      "birth": 1562371200000,
+      "gender": "M",
+      "blood": "O1",
+      "weight": "53",
+      "height": "174"
+    }
+  ],
   "instructors": [
     {
       "id": 2,

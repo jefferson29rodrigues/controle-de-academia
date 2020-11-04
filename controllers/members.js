@@ -28,7 +28,7 @@ exports.show = function(req, res) {
     const member = {
       ...foundMember,
       age: age(foundMember.birth),
-      services: foundMember.services.split(","),
+//      services: foundMember.services.split(","),
       created_at: desde(foundMember.created_at),
       //created_at: new Intl.DateTimeFormat("pt-BR").format(foundMember.created_at),
     }
@@ -52,29 +52,26 @@ exports.post = function(req, res) {
        }
    }
 
-   let {avatar_url, birth, name, gender, services} = req.body
+   birth = Date.parse(req.body.birth)
 
-   birth = Date.parse(birth)
-   const created_at = Date.now()
-   const id = Number(data.members.length + 1)
+   let id = 1
+   const lastMember = data.members[data.members.length - 1]
 
-   
+   if (lastMember) {
+       id = lastMember.id + 1
+   }
 
    // na 1° [] -> [{...}] na 2° [{...}] -> [{...}, {...}] 
    data.members.push({
        id,
-       avatar_url,
-       name,
-       birth,
-       gender,
-       services,
-       created_at
+       ...req.body,
+       birth   
    }) //  na 3° [{...}, {...}] -> [{...}, {...}, {...}]
 
    fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err) {
        if (err) return res.send("write file error!")
 
-       return res.redirect("/members")
+       return res.redirect(`/members/${id}`)
    });
 
     //return res.send(req.body)
